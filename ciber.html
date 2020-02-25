@@ -6,19 +6,84 @@
 <p id="ejercicios"></p>
 <p id="suma"></p>
 <script>
+// exercici 1
 console.log("hola mundo");
-alert("Sergi")	
+//exercici 2
+alert("Sergi")
+//exercici 3	
 var name = "Sergi";
 var lastname = "Benejam";
-var total =name+lastname;
+var total =name+" "+lastname;
 document.getElementById("ejercicios").innerHTML = "Nombre y apellido:" + total;
 console.log(total);
-
+//exercici 4
 var numero1 = 34;
 var numero2 = 56;
-var suma = numero1+numero2
+var suma =numero1+numero2
 document.getElementById("suma").innerHTML ="La suma de 34 + 56 es:" + suma;
 console.log(suma);
+// exercici 5
+var aprobado = 5;
+var nota = prompt("Introduce su nota");
+
+if(nota>=aprobado){
+	alert("Enhorabuena!!");
+} 
+else {
+	alert("Deje el Fornite y estudie más");
+}
+
+// exercici 6.1
+var color = ["blau","verd"]
+var i;
+for(i=0; i<=1 ;i++){
+console.log("Tinc un cotxe de color"+" "+ color[i]);	
+}
+// exercici 6.2
+var frase = "Tinc un cotxe de color blau";
+frase = frase.replace(/[o]/gi,'u') ;
+console.log(frase);
+
+// exercici 7
+var objetos = ["taula","cadira", "ordinador","llibreta"];
+var i;
+for (i=0;i<=3;i++){
+	
+	console.log("L'obejcte "+ objetos[i] +" està a la posició " + i);
+}
+
+//exercici 8
+
+function sumar (valor1,valor2){
+document.write("La suma es:" +(valor1+valor2))
+}
+
+function restar (valor1,valor2){
+document.write("La resta es:" + (valor1-valor2));
+}
+
+function multiplicar (valor1,valor2){
+document.write("La multiplicación es:" +(valor1*valor2));
+}
+
+var operador = prompt("Escribar que operación desee realizar(sumar,restar o multiplicación)");
+var valor1=parseInt (prompt("Primer numero"));
+var valor2=parseInt (prompt("Segundo numero"));
+
+if(operador=="sumar"){
+	sumar ( valor1, valor2);
+}
+else if (operador=="restar"){
+	restar ( valor1,valor2);
+}
+else if (operador=="multiplicar"){
+	multiplicar(valor1,valor2);
+}
+else{
+	alert("operación no valida");
+}
+
+
 
 </script>
 
