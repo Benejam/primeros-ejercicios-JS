@@ -1,0 +1,67 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	//exercici 1
+	var nombre=["S","E","R","G","I"];
+	var i;
+	for (i=0;i<=4;i++){
+		console.log (nombre[i]);
+	}
+
+	//exercici 2
+	var nombre =["s","e","r","g",1,"b",3,"n",3,"j","a","m"]
+	var vocales = ["a","e","i","o","u"]
+	for(i=0;i<=nombre.length;i++){
+
+		if(vocales.includes(nombre[i])){
+
+			console.log("He trobat la VOCAL: " + nombre[i])
+		}
+		else if(!isNaN(nombre[i])){
+			console.log("He trobat un numero: " + nombre[i])
+		}
+		else {
+			console.log("He trobat la Consonant: " + nombre[i])
+
+		}
+		
+	}
+	//exercici 3
+
+	var apellido = ["b","e","n","e","j","a","m"];
+    var mapa = new Map();
+    for (let letra of apellido) {
+        if (mapa.has(letra)) {
+            currentAmount = mapa.get(letra);
+            currentAmount++;
+            mapa.set(letra, currentAmount);
+        } else {
+            mapa.set(letra, 1);
+        }
+    }
+    console.log(mapa);
+
+
+	
+
+	
+	//exercici 4
+
+	var full_name = ["s","e","r","g","i"," ","b","e","n","e","j","a","m"]
+	
+
+	var array = full_name.map(function(name){		
+		return name
+		
+	})
+		console.log(array);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
