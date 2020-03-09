@@ -30,18 +30,19 @@
 	}
 	//exercici 3
 
+	
 	var apellido = ["b","e","n","e","j","a","m"];
-    var mapa = new Map();
-    for (let letra of apellido) {
-        if (mapa.has(letra)) {
-            currentAmount = mapa.get(letra);
-            currentAmount++;
-            mapa.set(letra, currentAmount);
-        } else {
-            mapa.set(letra, 1);
-        }
-    }
-    console.log(mapa);
+	var mapa = new Map();
+	for (let letra of apellido) {
+		if (mapa.has(letra)) {
+			currentAmount = mapa.get(letra);
+			currentAmount++;
+			mapa.set(letra, currentAmount);
+		} else {
+			mapa.set(letra, 1);
+		}
+	}
+	console.log(mapa);
 
 
 	
@@ -49,14 +50,12 @@
 	
 	//exercici 4
 
-	var full_name = ["s","e","r","g","i"," ","b","e","n","e","j","a","m"]
-	
+	var name = ["s","e","r","g","i"];
+	var space = [" "]
+	var lastname = ["b","e","n","e","j","a","m"];
+	var fullname = name.concat(space,lastname);
 
-	var array = full_name.map(function(name){		
-		return name
-		
-	})
-		console.log(array);
+	console.log(fullname);
 
 
 </script>
